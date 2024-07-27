@@ -62,7 +62,7 @@ def tarefa_programada():
 
 # Agenda a execução da função a cada 30 minutos
 def agendar_prog():
-    schedule.every(1).minutes.do(tarefa_programada)
+    schedule.every(30).minutes.do(tarefa_programada)
 
 # Loop principal que executa as tarefas agendadas
 if __name__ == "__main__":
